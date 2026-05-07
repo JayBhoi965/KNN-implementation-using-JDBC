@@ -17,7 +17,7 @@ public class first {
 
     public static void main(String[] args) throws Exception {
 
-        // 🔹 DB Connection
+       
         String url = "jdbc:mysql://localhost:3306/KNN";
         String user = "root";
         String password = "123456789J";
@@ -28,7 +28,6 @@ public class first {
         String query = "SELECT rating, duration, genre FROM movies";
         ResultSet rs = stmt.executeQuery(query);
 
-        // 🔹 Store data (Dynamic ArrayList)
         ArrayList<Double> ratingArr = new ArrayList<>();
         ArrayList<Integer> durationArr = new ArrayList<>();
         ArrayList<String> genreArr = new ArrayList<>();
